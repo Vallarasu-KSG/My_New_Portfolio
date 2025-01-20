@@ -310,3 +310,177 @@ body
         height: 230px;
     }
 }
+
+/* Skills Start */
+
+.skills-main-section
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0% 1% 0 1%;
+    padding: 1%;
+}
+
+/* skills-header-sec */
+.skills-header-sec
+{
+    margin: 5vh 0 9vh 0;
+    text-align: center;
+}
+.skills-header-sec h2
+{
+    font-size: 50px;
+}
+.skills-header-sec span
+{
+    color: red;
+}
+
+/* skills-icons-sec */
+.skills-icons-sec
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    row-gap: 30px;
+}
+
+.skills-main-section svg
+{
+    width: 40px;
+    height: 40px;
+}
+.skills-frontEnd-icon,
+.skills-language-icon,
+.skills-backEnd-icon,
+.skills-database-icon,
+.skills-productivity-icon,
+.skills-browser-icon
+{
+    background-color: rgba(128, 128, 128, 0.212);
+    border-radius: 20px;
+    height: 200px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+}
+.skills-frontEnd-icon p,
+.skills-language-icon p,
+.skills-backEnd-icon p,
+.skills-database-icon p,
+.skills-productivity-icon p,
+.skills-browser-icon p
+{
+    font-size: 27px;
+}
+.skills-frontEnd-icon ul,
+.skills-language-icon ul,
+.skills-backEnd-icon ul,
+.skills-productivity-icon ul
+{
+    width: 320px;
+    display: flex;
+    column-gap: 20px;
+}
+.skills-database-icon ul,
+.skills-browser-icon ul
+{
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.skills-frontEnd-icon ul li,
+.skills-language-icon ul li,
+.skills-backEnd-icon ul li,
+.skills-database-icon ul li,
+.skills-productivity-icon ul li,
+.skills-browser-icon ul li
+{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    padding: 5px;
+}
+.skills-frontEnd-icon ul li span,
+.skills-language-icon ul li span,
+.skills-backEnd-icon ul li span,
+.skills-database-icon ul li span,
+.skills-productivity-icon ul li span,
+.skills-browser-icon ul li span
+{
+    margin-top: 10px
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .skills-icons-sec {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 811px) {
+    .skills-icons-sec {
+        grid-template-columns: auto;
+    }
+
+    .skills-frontEnd-icon,
+    .skills-language-icon,
+    .skills-backEnd-icon,
+    .skills-database-icon,
+    .skills-productivity-icon,
+    .skills-browser-icon {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .skills-frontEnd-icon ul,
+    .skills-language-icon ul,
+    .skills-backEnd-icon ul,
+    .skills-productivity-icon ul,
+    .skills-database-icon ul,
+    .skills-browser-icon ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-header-sec h2 {
+        font-size: 35px;
+    }
+
+    .skills-frontEnd-icon p,
+    .skills-language-icon p,
+    .skills-backEnd-icon p,
+    .skills-database-icon p,
+    .skills-productivity-icon p,
+    .skills-browser-icon p {
+        font-size: 22px;
+    }
+
+    .skills-main-section svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .skills-frontEnd-icon ul li,
+    .skills-language-icon ul li,
+    .skills-backEnd-icon ul li,
+    .skills-database-icon ul li,
+    .skills-productivity-icon ul li,
+    .skills-browser-icon ul li {
+        padding: 3px;
+    }
+    .skills-productivity-icon ul .slack
+    {
+        padding: 20px;
+    }
+}
